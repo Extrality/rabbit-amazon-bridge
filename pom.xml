@@ -65,6 +65,7 @@
         <start-class>com.tyro.oss.rabbit_amazon_bridge.RabbitAmazonBridgeApplicationKt</start-class>
         <logback.version>1.2.3</logback.version>
         <latest.jolt.version>0.1.1</latest.jolt.version>
+        <aws-java-sdk.version>1.11.792</aws-java-sdk.version>
     </properties>
 
     <pluginRepositories>
@@ -219,6 +220,11 @@
         <dependency>
             <groupId>org.springframework.retry</groupId>
             <artifactId>spring-retry</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-sts</artifactId>
+            <version>${aws-java-sdk.version}</version>
         </dependency>
         <dependency>
             <groupId>com.bazaarvoice.jolt</groupId>
